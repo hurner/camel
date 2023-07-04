@@ -6,7 +6,7 @@ from camel.utils import print_text_animated
 
 
 def main() -> None:
-    task_prompt = "Write a research proposal for large-scale language models"
+    task_prompt = "写一篇中国大语言模型产业发展报告"
     model_config = ChatGPTConfig(temperature=0.8, n=3)
     assistant_agent_kwargs = dict(model_config=model_config)
     user_agent_kwargs = dict(model_config=model_config)

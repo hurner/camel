@@ -14,9 +14,11 @@ def main(key: str = 'generate_users', num_roles: int = 50):
         content="You are a helpful assistant.",
     )
     agent = ChatAgent(assistant_sys_msg)
+    print(agent)
     agent.reset()
 
     user_msg = UserChatMessage(role_name="User", content=prompt)
+    print(user_msg)
     assistant_msg, _, _ = agent.step(user_msg)
     print(assistant_msg[0].content)
 

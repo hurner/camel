@@ -1,0 +1,17 @@
+{"question_id": 4, "text": "Write a Python script to scrape data from a website and store it in a CSV file.", "category": "coding task"}
+{"question_id": 5, "text": "Create a Java program that sorts an array of integers using the bubble sort algorithm.", "category": "coding task"}
+{"question_id": 6, "text": "Develop a C# application that connects to a database and performs CRUD operations on a table.", "category": "coding task"}
+{"question_id": 7, "text": "Implement a Python function to calculate the factorial of a given number using recursion.", "category": "coding task"}
+{"question_id": 8, "text": "Build a web application using HTML, CSS, and JavaScript that allows users to create and save notes.", "category": "coding task"}
+{"question_id": 9, "text": "Write a Java program to find the sum of all prime numbers within a given range.", "category": "coding task"}
+{"question_id": 10, "text": "Develop a Python script that generates a random password with a specified length and complexity.", "category": "coding task"}
+{"question_id": 11, "text": "Implement a C++ class that represents a linked list and provides methods for insertion, deletion, and traversal.", "category": "coding task"}
+{"question_id": 12, "text": "Create a JavaScript function that validates a form's input fields before submitting the data.", "category": "coding task"}
+{"question_id": 13, "text": "Build a Java application that simulates a simple banking system with features like account creation, deposit, and withdrawal.", "category": "coding task"}
+{"question_id": 14, "text": "Write a Python program to convert a decimal number to binary using recursion.", "category": "coding task"}
+{"question_id": 15, "text": "Develop a C# application that uses a REST API to retrieve data from a remote server and display it in a graphical user interface.", "category": "coding task"}
+{"question_id": 16, "text": "Implement a Java program that checks if a given string is a palindrome.", "category": "coding task"}
+{"question_id": 17, "text": "Create a web page using HTML and CSS that displays a responsive grid of images with hover effects.", "category": "coding task"}
+{"question_id": 18, "text": "Build a Python script that extracts text from PDF files and saves it in a text file.", "category": "coding task"}
+{"question_id": 19, "text": "Write a C++ program to implement a stack data structure using an array.", "category": "coding task"}
+{"question_id": 20, "text": "Develop a Java application that generates a random maze and finds the shortest path from the start to the end using a graph traversal algorithm.", "category": "coding task"}

@@ -16,7 +16,7 @@ def main() -> None:
         "CAMEL AGI",
         task_prompt=task_prompt,
         with_task_specify=True,
-        with_human_in_the_loop=True,
+#        with_human_in_the_loop=False,
         task_type=TaskType.MISALIGNMENT,
         task_specify_agent_kwargs=dict(model_config=ChatGPTConfig(
             temperature=1.4)),

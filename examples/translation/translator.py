@@ -88,4 +88,4 @@ def main(directory_path: str) -> None:
 
 
 if __name__ == "__main__":
-    main(directory_path="./camel_data/ai_society")
+    main(directory_path="./data/ai_society")

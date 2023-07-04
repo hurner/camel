@@ -51,7 +51,7 @@ class TaskSpecifyAgent(ChatAgent):
         system_message = SystemMessage(
             role_name="Task Specifier",
             role_type=RoleType.ASSISTANT,
-            content="You can make a task more specific.",
+            content="您可以使任务更具体。.",
         )
         super().__init__(system_message, model, model_config)
 

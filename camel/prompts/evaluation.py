@@ -16,11 +16,11 @@ class EvaluationPromptTemplateDict(TextPromptDict):
     """
 
     GENERATE_QUESTIONS = TextPrompt(
-        """Generate {num_questions} {category} diverse questions.
-Here are some example questions:
+        """生成{num_questions}个{category}的多样化问题。
+以下是一些示例问题：
 {examples}
 
-Now generate {num_questions} questions of your own. Be creative""")
+现在，请自己生成{num_questions}个问题。发挥创意。""")
 
     def __init__(self, *args: Any, **kwargs: Any) -> None:
         super().__init__(*args, **kwargs)
