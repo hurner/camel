@@ -118,7 +118,13 @@ class ChatAgent:
                 the chat session has terminated, and information about the chat
                 session.
         """
+        print("class: chat_agent_step")
+        print(f"input_message: {input_message}")
+
         messages = self.update_messages(input_message)
+
+        print(f"update_messages: {messages}")
+        
         if self.message_window_size is not None and len(
                 messages) > self.message_window_size:
             messages = [self.system_message
@@ -132,11 +138,19 @@ class ChatAgent:
                 messages=openai_messages,
                 **self.model_config.__dict__,
             )
+            
+            print(f"openai_messages:{openai_messages}")
+            print("response:")
+            print(str(response).encode().decode("unicode_escape"))
+
             output_messages = [
                 ChatMessage(role_name=self.role_name, role_type=self.role_type,
                             meta_dict=dict(), **dict(choice["message"]))
                 for choice in response["choices"]
             ]
+
+            print(f"output_messages: {output_messages}")
+
             info = self.get_info(
                 response["id"],
                 response["usage"],

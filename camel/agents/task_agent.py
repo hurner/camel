@@ -80,6 +80,8 @@ class TaskSpecifyAgent(ChatAgent):
             self.task_specify_prompt = (self.task_specify_prompt.format(
                 **meta_dict))
 
+        print("task_agent_step")
+
         task_msg = UserChatMessage(role_name="Task Specifier",
                                    content=self.task_specify_prompt)
         specified_task_msgs, terminated, _ = super().step(task_msg)

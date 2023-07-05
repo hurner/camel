@@ -255,11 +255,15 @@ class RolePlaying:
             whether or not the user agent terminated the conversation, and
             any additional user information.
         """
+
+        print('self.user_agent.step')
+
         user_msgs, user_terminated, user_info = self.user_agent.step(
             assistant_msg.to_user_chat_message())
         if user_terminated or user_msgs is None:
             return ((None, None, None), (None, user_terminated, user_info))
 
+        print('self.process_messages(user_msgs)')
         print("user_msgs input:")
         print(user_msgs)
 
@@ -270,6 +274,8 @@ class RolePlaying:
 
         self.user_agent.update_messages(user_msg)
 
+        print('self.assistant_agent.step')
+
         (assistant_msgs, assistant_terminated,
          assistant_info) = self.assistant_agent.step(
              user_msg.to_user_chat_message())
@@ -277,6 +283,7 @@ class RolePlaying:
             return ((None, assistant_terminated, assistant_info),
                     (user_msg, user_terminated, user_info))
 
+        print('self.process_messages(assistant_msgs)')
         print("assistant_msgs input:")
         print(assistant_msgs)
 
