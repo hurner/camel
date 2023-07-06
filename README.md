@@ -1,3 +1,13 @@
+## 2. 反向工程
+
+```
+pip install pylint
+
+pyreverse -o pdf [graphs.py](http://graphs.py/)
+
+pyreverse -ASmy -o png -p _002 core/
+```
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing)
 <a href="https://huggingface.co/camel-ai"><img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo-with-title.png" alt="Hugging Face" width="100"/></a>
 # CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society
