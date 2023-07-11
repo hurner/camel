@@ -8,6 +8,9 @@ from camel.messages import ChatMessage, MessageType, SystemMessage
 from camel.typing import ModelType
 from camel.utils import get_model_token_limit, num_tokens_from_messages
 
+from colorama import Fore
+from camel.utils import print_text_animated
+
 
 class ChatAgent:
     r"""Class for managing conversations of CAMEL Chat Agents.
@@ -139,9 +142,9 @@ class ChatAgent:
                 **self.model_config.__dict__,
             )
             
-            print(f"openai_messages:{openai_messages}")
-            print("response:")
-            print(str(response).encode().decode("unicode_escape"))
+            print_text_animated(Fore.WHITE + f"openai_messages:{openai_messages}")
+            print_text_animated(Fore.WHITE + "openai response:")
+            print_text_animated(Fore.WHITE + str(response).encode().decode("unicode_escape"))
 
             output_messages = [
                 ChatMessage(role_name=self.role_name, role_type=self.role_type,

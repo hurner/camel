@@ -7,7 +7,7 @@ from camel.utils import print_text_animated
 def main() -> None:
     task_prompt = "写一篇中国大语言模型产业发展报告"
     role_play_session = RolePlaying(
-        "写手",
+        "乙方",
         "甲方",
         task_prompt=task_prompt,
         with_task_specify=True,
@@ -26,7 +26,7 @@ def main() -> None:
 
     print(Fore.RED + f"Final task prompt:\n{role_play_session.task_prompt}\n")
 
-    chat_turn_limit, n = 3, 0
+    chat_turn_limit, n = 4, 0
 
     print("role_play_session.init_chat")
     assistant_msg, _ = role_play_session.init_chat()
