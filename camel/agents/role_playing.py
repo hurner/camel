@@ -96,8 +96,8 @@ class RolePlaying:
                 task_prompt,
                 meta_dict=task_specify_meta_dict,
             )
-            print("specified_task_prompt")
-            print(self.specified_task_prompt)
+            # print("specified_task_prompt")
+            # print(self.specified_task_prompt)
             task_prompt = self.specified_task_prompt
         else:
             self.specified_task_prompt = None
@@ -260,13 +260,13 @@ class RolePlaying:
         if user_terminated or user_msgs is None:
             return ((None, None, None), (None, user_terminated, user_info))
 
-        print("user_msgs input:")
-        print(user_msgs)
+        # print("user_msgs input:")
+        # print(user_msgs)
 
         user_msg = self.process_messages(user_msgs)
 
-        print("user_msg output:")
-        print(user_msg)
+        # print("user_msg output:")
+        # print(user_msg)
 
         self.user_agent.update_messages(user_msg)
 
@@ -277,13 +277,13 @@ class RolePlaying:
             return ((None, assistant_terminated, assistant_info),
                     (user_msg, user_terminated, user_info))
 
-        print("assistant_msgs input:")
-        print(assistant_msgs)
+        # print("assistant_msgs input:")
+        # print(assistant_msgs)
 
         assistant_msg = self.process_messages(assistant_msgs)
 
-        print("assistant_msg output:")
-        print(assistant_msg)
+        # print("assistant_msg output:")
+        # print(assistant_msg)
         
         self.assistant_agent.update_messages(assistant_msg)
 

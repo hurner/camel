@@ -28,7 +28,7 @@ def main() -> None:
 
     chat_turn_limit, n = 50, 0
     assistant_msg, _ = role_play_session.init_chat()
-    print(assistant_msg)
+    # print(assistant_msg)
     while n < chat_turn_limit:
         n += 1
         assistant_return, user_return = role_play_session.step(assistant_msg)
